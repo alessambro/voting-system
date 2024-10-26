@@ -1,0 +1,103 @@
+.con {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.asd {
+  display: flex;
+  justify-content: center;
+}
+
+.email--1 {
+  width: 100%;
+}
+
+.aa {
+  width: 100%;
+}
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
+.con {
+  max-width: 400px; /* Max width for the form */
+  margin: 50px auto; /* Center the form vertically and horizontally */
+  padding: 20px;
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+h1 {
+  text-align: center; /* Center the header */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Space between inputs */
+  margin-bottom: 15px; /* Space below each row */
+}
+
+.col {
+  flex: 1; /* Equal width for columns */
+  margin-right: 10px; /* Space between columns */
+}
+
+.col:last-child {
+  margin-right: 0; /* No margin for the last column */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+.btn-primary {
+  width: 100%; /* Full width for the button */
+  padding: 10px; /* Padding inside the button */
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none; /* No border */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size for the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column; /* Stack inputs on small screens */
+  }
+  .col {
+    margin-right: 0; /* No margin for columns on small screens */
+    margin-bottom: 10px; /* Space below each input */
+  }
+}
